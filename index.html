@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 14</title>
+	</head>
+	<body>
+
+		<!-- Практична робота №14-->
+
+		<!-- 1) Будуємо FLEX-контейнер, та FLEX-елементи, та відпрацьовуєте усі властивості та їх значення
+			  2) Граємо в ігри https://flexboxfroggy.com/
+			  3) Повторюємо усі приклади з уроку (спробуйте не підглядати) -->
+		<div class="wrapper">
+			<header class="header">
+					<div class="header__container">
+						<!-- ЗАВДАННЯ 1: Будуємо FLEX-контейнер, та FLEX-елементи, та відпрацьовуєте усі властивості та їх значення -->
+						<div class="header__menu menu">
+							<div class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item"><a href="https://kirillchacha.github.io/Lesson-14/index.html" class="menu__link">Головна</a></li>
+									<li class="menu__item"><a href="https://kirillchacha.github.io/Lesson-14/game.html" class="menu__link">Пройденна гра</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+			</header>
+			<main class="page">
+					<div class="page__container">
+						<!-- ЗАВДАННЯ 3: Повторити усі приклади з уроку -->
+						<div class="page__content-top content-top-page">
+							<div class="content-top-page__block block-content-top-page" title="Звичайний блок">
+								<!-- FLEX-контейнер -->
+								<div class="block-content-top-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-content-top-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-content-top-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-content-top-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-content-top-page__item">4</div>
+								</div>
+							</div>
+							<div class="content-top-page__block-flex block-flex-content-top-page" title="Визначає блоковий flex-контейнер. Перетворює всі свої прямі, дочірні елементи у flex-елементи.">
+								<!-- FLEX-контейнер -->
+								<div class="block-flex-content-top-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-flex-content-top-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-content-top-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-content-top-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-content-top-page__item">4</div>
+								</div>
+							</div>
+							<div class="content-top-page__block-inline-flex block-inline-flex-content-top-page" title="Визначає стрічний flex-контейнер. Перетворює всі свої прямі, дочірні елементи у flex-елементи.">
+								<!-- FLEX-контейнер -->
+								<div class="block-inline-flex-content-top-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-inline-flex-content-top-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-inline-flex-content-top-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-inline-flex-content-top-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-inline-flex-content-top-page__item">4</div>
+								</div>
+							</div>
+						</div>
+		
+						<div class="page__flex-wrap flex-wrap-page">
+							<div class="flex-wrap-page__block-flex-nowrap block-flex-nowrap-page" title="Значення за замовченням (не потрібно вказувати). Flex-елементи не можуть переміщатися на наступні рядки flex-контейнера.">
+								<!-- FLEX-контейнер -->
+								<div class="block-flex-nowrap-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-flex-nowrap-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-nowrap-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-nowrap-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-nowrap-page__item">4</div>
+								</div>
+							</div>
+							<div class="page__block-flex-wrap block-flex-wrap-page" title="Flex-елементи можуть переміщатися на наступні рядки flex-контейнера.">
+								<!-- FLEX-контейнер -->
+								<div class="block-flex-wrap-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-flex-wrap-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-wrap-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-wrap-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-wrap-page__item">4</div>
+								</div>
+							</div>
+							<div class="page__block-flex-wrap-reverse block-flex-wrap-reverse-page" title="Flex-елементи зможуть переміщатися на наступні рядки flex-контейнера, але у зворотному напрямку.">
+								<!-- FLEX-контейнер -->
+								<div class="block-flex-wrap-reverse-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-flex-wrap-reverse-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-wrap-reverse-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-wrap-reverse-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-wrap-reverse-page__item">4</div>
+								</div>
+							</div>
+						</div>
+		
+						<div class="page__flex-direction flex-direction-page">
+							<div class="flex-direction-page__block-row block-row-flex-direction-page" title="Значення за замовченням (не потрібно вказувати). Основна вісь горизонтальна. Всі flex-елементи розташуються з ліва направо по горизонталі.">
+								<!-- FLEX-контейнер -->
+								<div class="block-row-flex-direction-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-row-flex-direction-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-row-flex-direction-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-row-flex-direction-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-row-flex-direction-page__item">4</div>
+								</div>
+							</div>
+							<div class="flex-direction-page__block-row-reverse block-row-reverse-flex-direction-page" title="Всі flex-елементи розташуються з право наліво по горизонталі.">
+								<!-- FLEX-контейнер -->
+								<div class="block-row-reverse-flex-direction-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-row-reverse-flex-direction-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-row-reverse-flex-direction-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-row-reverse-flex-direction-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-row-reverse-flex-direction-page__item">4</div>
+								</div>
+							</div>
+							<div class="flex-direction-page__block-column block-column-flex-direction-page" title="Основна вісь зміниться з горизонтальної на вертикальну. Усі flex-елементи розташуються зверху донизу.">
+								<!-- FLEX-контейнер -->
+								<div class="block-column-flex-direction-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-column-flex-direction-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-column-flex-direction-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-column-flex-direction-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-column-flex-direction-page__item">4</div>
+								</div>
+							</div>
+							<div class="flex-direction-page__block-column-reverse block-column-reverse-flex-direction-page" title="Основна вісь зміниться з горизонтальної на вертикальну. Усі flex-елементи розташуються знизу нагору.">
+								<!-- FLEX-контейнер -->
+								<div class="block-column-reverse-flex-direction-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-column-reverse-flex-direction-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-column-reverse-flex-direction-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-column-reverse-flex-direction-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-column-reverse-flex-direction-page__item">4</div>
+								</div>
+							</div>
+						</div>
+		
+						<div class="page__justify-content justify-content-page">
+							<div class="justify-content-page__block-justify-content block-justify-content-justify-content-page" title="Значення за замовченням (не потрібно вказувати). Flex-елементи притискаються до початку осі.">
+								<!-- FLEX-контейнер -->
+								<div class="block-justify-content-justify-content-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-justify-content-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-justify-content-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-justify-content-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-justify-content-page__item">4</div>
+								</div>
+							</div>
+							<div class="justify-content-page__block-justify-content-flex-end block-justify-content-flex-end-justify-content-page" title="Flex-елементи притискаються до кінця основної осі.">
+								<!-- FLEX-контейнер -->
+								<div class="block-justify-content-flex-end-justify-content-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-flex-end-justify-content-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-flex-end-justify-content-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-flex-end-justify-content-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-flex-end-justify-content-page__item">4</div>
+								</div>
+							</div>
+							<div class="justify-content-page__block-justify-content-center block-justify-content-center-justify-content-page" title="Flex-елементи розташовуються в центрі основної осі.">
+								<!-- FLEX-контейнер -->
+								<div class="block-justify-content-center-justify-content-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-center-justify-content-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-center-justify-content-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-center-justify-content-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-center-justify-content-page__item">4</div>
+								</div>
+							</div>
+							<div class="justify-content-page__block-justify-content-space-between block-justify-content-space-between-justify-content-page" title="Flex-елементи розміщуються поступово по основній осі. Перший елемент знаходиться на початку осі, останній елемент знаходиться наприкінці осі.">
+								<!-- FLEX-контейнер -->
+								<div class="block-justify-content-space-between-justify-content-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-space-between-justify-content-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-space-between-justify-content-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-space-between-justify-content-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-space-between-justify-content-page__item">4</div>
+								</div>
+							</div>
+							<div class="justify-content-page__block-justify-content-space-around block-justify-content-space-around-justify-content-page" title="Flex-елементи розташовуються рівномірно по основній осі. До кожного flex-елементу додається простір ліворуч і праворуч.">
+								<!-- FLEX-контейнер -->
+								<div class="block-justify-content-space-around-justify-content-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-space-around-justify-content-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-space-around-justify-content-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-space-around-justify-content-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-space-around-justify-content-page__item">4</div>
+								</div>
+							</div>
+							<div class="justify-content-page__block-justify-content-space-evenly block-justify-content-space-evenly-justify-content-page" title="Flex-елементи розташовуються рівномірно по основній осі з однаковим простором навколо них.">
+								<!-- FLEX-контейнер -->
+								<div class="block-justify-content-space-evenly-justify-content-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-space-evenly-justify-content-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-space-evenly-justify-content-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-space-evenly-justify-content-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-justify-content-space-evenly-justify-content-page__item">4</div>
+								</div>
+							</div>
+						</div>
+		
+						<div class="page__align-items align-items-page">
+							<div class="align-items-page__block-align-items-stretch block-align-items-stretch-align-items-page" title="Значення за замовченням (не потрібно вказувати). Flex-елементи розтягуються весь розмір поперечної осі flex-контейнера.">
+								<!-- FLEX-контейнер -->
+								<div class="block-align-items-stretch-align-items-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-align-items-stretch-align-items-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-items-stretch-align-items-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-items-stretch-align-items-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-items-stretch-align-items-page__item">4</div>
+								</div>
+							</div>
+							<div class="align-items-page__block-align-items-flex-start block-align-items-flex-start-align-items-page" title="Flex-елементи притискаються до початку поперечної осі.">
+								<!-- FLEX-контейнер -->
+								<div class="block-align-items-flex-start-align-items-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-align-items-flex-start-align-items-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-items-flex-start-align-items-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-items-flex-start-align-items-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-items-flex-start-align-items-page__item">4</div>
+								</div>
+							</div>
+							<div class="align-items-page__block-align-items-flex-end block-align-items-flex-end-align-items-page" title="Flex-елементи притискаються до кінця поперечної осі.">
+								<!-- FLEX-контейнер -->
+								<div class="block-align-items-flex-end-align-items-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-align-items-flex-end-align-items-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-items-flex-end-align-items-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-items-flex-end-align-items-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-items-flex-end-align-items-page__item">4</div>
+								</div>
+							</div>
+							<div class="align-items-page__block-align-items-center block-align-items-center-align-items-page" title="Flex-елементи розташовуються в центрі поперечної осі.">
+								<!-- FLEX-контейнер -->
+								<div class="block-align-items-center-align-items-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-align-items-center-align-items-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-items-center-align-items-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-items-center-align-items-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-items-center-align-items-page__item">4</div>
+								</div>
+							</div>
+							<div class="align-items-page__block-align-items-baseline block-align-items-baseline-align-items-page" title="Flex-елементи розміщуються по базовій лінії.">
+								<!-- FLEX-контейнер -->
+								<div class="block-align-items-baseline-align-items-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-align-items-baseline-align-items-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-items-baseline-align-items-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-items-baseline-align-items-page__item item-block-align-items-baseline-align-items-page_3">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-items-baseline-align-items-page__item">4</div>
+								</div>
+							</div>
+						</div>
+		
+						<div class="page__order order-page" title="Керує порядком, в якому розташовуються flex-елементи всередині flex-контейнера.">
+							<div class="order-page__block-order block-order-order-page">
+								<!-- FLEX-контейнер -->
+								<div class="block-order-order-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-order-order-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-order-order-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-order-order-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-order-order-page__item">4</div>
+								</div>
+							</div>
+							<div class="order-page__block-order2 block-order2-order-page">
+								<!-- FLEX-контейнер -->
+								<div class="block-order2-order-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-order2-order-page__item item-block-order2-order-page_1">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-order2-order-page__item item-block-order2-order-page_2">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-order2-order-page__item item-block-order2-order-page_3">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-order2-order-page__item item-block-order2-order-page_4">4</div>
+								</div>
+							</div>
+						</div>
+		
+						<div class="page__align-self align-self-page">
+							<div class="align-self-page__block-align-self block-align-self-align-self-page" title="Значення за замовченням (не потрібно вказувати). Flex-елементи розтягуються весь розмір поперечної осі flex-контейнера.">
+								<!-- FLEX-контейнер -->
+								<div class="block-align-self-align-self-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-align-self-align-self-page__item item-block-align-self-align-self-page_1">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-self-align-self-page__item item-block-align-self-align-self-page_2">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-self-align-self-page__item item-block-align-self-align-self-page_3">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-self-align-self-page__item item-block-align-self-align-self-page_4">4</div>
+								</div>
+							</div>
+							<div class="align-self-page__block-align-self-flex-start block-align-self-flex-start-align-self-page" title="Flex-елементи притискаються до початку поперечної осі.">
+								<!-- FLEX-контейнер -->
+								<div class="block-align-self-flex-start-align-self-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-align-self-flex-start-align-self-page__item item-block-align-self-flex-start-align-self-page_1">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-self-flex-start-align-self-page__item item-block-align-self-flex-start-align-self-page_2">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-self-flex-start-align-self-page__item item-block-align-self-flex-start-align-self-page_3">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-self-flex-start-align-self-page__item item-block-align-self-flex-start-align-self-page_4">4</div>
+								</div>
+							</div>
+							<div class="align-self-page__block-align-self-flex-end block-align-self-flex-end-align-self-page" title="Flex-елементи притискаються до кінця поперечної осі.">
+								<!-- FLEX-контейнер -->
+								<div class="block-align-self-flex-end-align-self-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-align-self-flex-end-align-self-page__item item-block-align-self-flex-end-align-self-page_1">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-self-flex-end-align-self-page__item item-block-align-self-flex-end-align-self-page_2">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-self-flex-end-align-self-page__item item-block-align-self-flex-end-align-self-page_3">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-self-flex-end-align-self-page__item item-block-align-self-flex-end-align-self-page_4">4</div>
+								</div>
+							</div>
+							<div class="align-self-page__block-align-self-center block-align-self-center-align-self-page" title="Flex-елементи розташовуються в центрі поперечної осі.">
+								<!-- FLEX-контейнер -->
+								<div class="block-align-self-center-align-self-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-align-self-center-align-self-page__item item-block-align-self-center-align-self-page_1">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-self-center-align-self-page__item item-block-align-self-center-align-self-page_2">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-self-center-align-self-page__item item-block-align-self-center-align-self-page_3">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-align-self-center-align-self-page__item item-block-align-self-center-align-self-page_4">4</div>
+								</div>
+							</div>
+						</div>
+		
+						<div class="page__flex-basis flex-basis-page">
+							<div class="flex-basis-page__block-flex-basis block-flex-basis-flex-basis-page" title="Значення за замовченням (не потрібно вказувати). Flex-елемент займатиме розмір залежно від контенту всередині нього.">
+								<!-- FLEX-контейнер -->
+								<div class="block-flex-basis-flex-basis-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-flex-basis-flex-basis-page__item">1й flex-элемент</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-basis-flex-basis-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-basis-flex-basis-page__item">3й flex-элемент</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-basis-flex-basis-page__item">4</div>
+								</div>
+							</div>
+							<div class="flex-basis-page__block-flex-basis-px block-flex-basis-px-flex-basis-page" title="Встановлюємо двом flex-елементам початкову ширину в пікселях.">
+								<!-- FLEX-контейнер -->
+								<div class="block-flex-basis-px-flex-basis-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-flex-basis-px-flex-basis-page__item item-block-flex-basis-px-flex-basis-page_1">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-basis-px-flex-basis-page__item item-block-flex-basis-px-flex-basis-page_2">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-basis-px-flex-basis-page__item item-block-flex-basis-px-flex-basis-page_3">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-basis-px-flex-basis-page__item item-block-flex-basis-px-flex-basis-page_4">4</div>
+								</div>
+							</div>
+							<div class="flex-basis-page__block-flex-basis-interest block-flex-basis-interest-flex-basis-page" title="Встановлюємо двом flex-елементам початкову ширину у відсотках.">
+								<!-- FLEX-контейнер -->
+								<div class="block-flex-basis-interest-flex-basis-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-flex-basis-interest-flex-basis-page__item item-block-flex-basis-interest-flex-basis-page_1">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-basis-interest-flex-basis-page__item item-block-flex-basis-interest-flex-basis-page_2">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-basis-interest-flex-basis-page__item item-block-flex-basis-interest-flex-basis-page_3">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-basis-interest-flex-basis-page__item item-block-flex-basis-interest-flex-basis-page_4">4</div>
+								</div>
+							</div>
+						</div>
+		
+						<div class="page__flex-grow flex-grow-page">
+							<div class="flex-grow-page__block-flex-grow-prohibited block-flex-grow-prohibited-flex-grow-page" title="Flex-елемент не може збільшитись.">
+								<!-- FLEX-контейнер -->
+								<div class="block-flex-grow-prohibited-flex-grow-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-flex-grow-prohibited-flex-grow-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-grow-prohibited-flex-grow-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-grow-prohibited-flex-grow-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-grow-prohibited-flex-grow-page__item">4</div>
+								</div>
+							</div>
+							<div class="flex-grow-page__block-flex-grow-allowed block-flex-grow-allowed-flex-grow-page" title="Flex-елемент збільшиться, заповнюючи простір flex-контейнера.">
+								<!-- FLEX-контейнер -->
+								<div class="block-flex-grow-allowed-flex-grow-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-flex-grow-allowed-flex-grow-page__item item-block-flex-grow-allowed-flex-grow-page_1">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-grow-allowed-flex-grow-page__item item-block-flex-grow-allowed-flex-grow-page_2">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-grow-allowed-flex-grow-page__item item-block-flex-grow-allowed-flex-grow-page_3">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-grow-allowed-flex-grow-page__item item-block-flex-grow-allowed-flex-grow-page_4">4</div>
+								</div>
+							</div>
+						</div>
+		
+						<div class="page__flex-shrink flex-shrink-page">
+							<div class="flex-shrink-page__block-flex-shrink-prohibited block-flex-shrink-prohibited-flex-shrink-page" title="Flex-елемент не може збільшитись.">
+								<!-- FLEX-контейнер -->
+								<div class="block-flex-shrink-prohibited-flex-shrink-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-flex-shrink-prohibited-flex-shrink-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-shrink-prohibited-flex-shrink-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-shrink-prohibited-flex-shrink-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-shrink-prohibited-flex-shrink-page__item">4</div>
+								</div>
+							</div>
+							<div class="flex-shrink-page__block-flex-shrink-allowed block-flex-shrink-allowed-flex-shrink-page" title="Flex-елемент не може збільшитись.">
+								<!-- FLEX-контейнер -->
+								<div class="block-flex-shrink-allowed-flex-shrink-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-flex-shrink-allowed-flex-shrink-page__item item-block-flex-shrink-allowed-flex-shrink-page_1">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-shrink-allowed-flex-shrink-page__item item-block-flex-shrink-allowed-flex-shrink-page_2">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-shrink-allowed-flex-shrink-page__item item-block-flex-shrink-allowed-flex-shrink-page_3">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-shrink-allowed-flex-shrink-page__item item-block-flex-shrink-allowed-flex-shrink-page_4">4</div>
+								</div>
+							</div>
+						</div>
+		
+						<div class="page__flex-abbreviated flex-abbreviated-page">
+							<div class="flex-abbreviated-page__block-flex-abbreviated-entry block-flex-abbreviated-entry-flex-abbreviated-page" title="Скорочений запис">
+								<!-- FLEX-контейнер -->
+								<div class="block-flex-abbreviated-entry-flex-abbreviated-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-flex-abbreviated-entry-flex-abbreviated-page__item item-block-flex-abbreviated-entry-flex-abbreviated-page_1">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-abbreviated-entry-flex-abbreviated-page__item item-block-flex-abbreviated-entry-flex-abbreviated-page_2">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-abbreviated-entry-flex-abbreviated-page__item item-block-flex-abbreviated-entry-flex-abbreviated-page_3">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-abbreviated-entry-flex-abbreviated-page__item item-block-flex-abbreviated-entry-flex-abbreviated-page_4">4</div>
+								</div>
+							</div>
+						</div>
+		
+						<div class="page__fbc fbc-page">  <!-- justify-content:center; align-items: center; -->
+							<div class="fbc-page__block-in-the-center block-in-the-center-fbc-page" title="Центруємо блок.">
+								<!-- FLEX-контейнер -->
+								<div class="block-in-the-center-fbc-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-in-the-center-fbc-page__item">Центр</div>
+								</div>
+							</div>
+						</div>
+		
+						<div class="page__gap gap-page">
+							<div class="gap-page__block-gap block-gap-gap-page" title="Проміжок між FLEX-елементами. Не залежить від flex-direction">
+								<!-- FLEX-контейнер -->
+								<div class="block-gap-gap-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-gap-gap-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-gap-gap-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-gap-gap-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-gap-gap-page__item">4</div>
+								</div>
+							</div>
+							<div class="gap-page__block-column-gap block-column-gap-gap-page" title="Між колонками">
+								<!-- FLEX-контейнер -->
+								<div class="block-column-gap-gap-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-column-gap-gap-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-column-gap-gap-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-column-gap-gap-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-column-gap-gap-page__item">4</div>
+								</div>
+							</div>
+							<div class="gap-page__block-row-gap block-row-gap-gap-page" title="Між рядками">
+								<!-- FLEX-контейнер -->
+								<div class="block-row-gap-gap-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-row-gap-gap-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-row-gap-gap-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-row-gap-gap-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-row-gap-gap-page__item">4</div>
+								</div>
+							</div>
+						</div>
+		
+						<div class="page__flex-flow flex-flow-page" title="flex-flow CSS властивість, яка є скороченням для окремих властивостей flex-direction та flex-wrap.">
+							<div class="flex-flow-page__block-flex-flow block-flex-flow-flex-flow-page">
+								<!-- FLEX-контейнер -->
+								<div class="block-flex-flow-flex-flow-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-flex-flow-flex-flow-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-flow-flex-flow-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-flow-flex-flow-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-flow-flex-flow-page__item">4</div>
+								</div>
+							</div>
+							<div class="flex-flow-page__block-flex-flow2 block-flex-flow2-flex-flow-page">
+								<!-- FLEX-контейнер -->
+								<div class="block-flex-flow2-flex-flow-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-flex-flow2-flex-flow-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-flow2-flex-flow-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-flow2-flex-flow-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-flow2-flex-flow-page__item">4</div>
+								</div>
+							</div>
+							<div class="flex-flow-page__block-flex-flow3 block-flex-flow3-flex-flow-page">
+								<!-- FLEX-контейнер -->
+								<div class="block-flex-flow3-flex-flow-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-flex-flow3-flex-flow-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-flow3-flex-flow-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-flow3-flex-flow-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-flow3-flex-flow-page__item">4</div>
+								</div>
+							</div>
+							<div class="flex-flow-page__block-flex-flow4 block-flex-flow4-flex-flow-page">
+								<!-- FLEX-контейнер -->
+								<div class="block-flex-flow4-flex-flow-page__content">
+									<!-- FLEX-елемент -->
+									<div class="block-flex-flow4-flex-flow-page__item">1</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-flow4-flex-flow-page__item">2</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-flow4-flex-flow-page__item">3</div>
+									<!-- FLEX-елемент -->
+									<div class="block-flex-flow4-flex-flow-page__item">4</div>
+								</div>
+							</div>
+						</div>
+		
+						<!-- =========================================================================================================================================== -->
+		
+						<!-- Фішка -->
+						<div class="page__block-test block-test-page">
+							<!-- FLEX-контейнер -->
+							<div class="block-test-page__row row">
+								<!-- FLEX-елемент -->
+								<div class="column">
+									<!-- Контент -->
+									<div class="item">
+										Колонка №1
+									</div>
+								</div>
+								<!-- FLEX-елемент -->
+								<div class="column">
+									<!-- Контент -->
+									<div class="item">
+										Колонка №2
+									</div>
+								</div>
+								<!-- FLEX-елемент -->
+								<div class="column">
+									<!-- Контент -->
+									<div class="item">
+										Колонка №3
+									</div>
+								</div>
+								<!-- FLEX-елемент -->
+								<div class="column">
+									<!-- Контент -->
+									<div class="item">
+										Колонка №4
+									</div>
+								</div>
+							</div>
+						</div>
+		
+						<!-- =========================================================================================================================================== -->
+		
+						<!-- Приклад з текстом -->
+						<div class="page__block-test2">
+							<div class="text-block-test2">
+								<h1 class="text-block-test2__title">Подорож у Рим</h1>
+								<a href="" class="text-block-test2__link">Я посилання</a>
+								<div class="text-block-test2__text">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sit praesentium adipisci. Delectus veritatis nam unde doloremque incidunt vitae in facilis neque ullam quod rerum iusto repellat molestiae, alias at.
+								</div>
+							</div>
+						</div>
+		
+						<!-- =========================================================================================================================================== -->
+		
+						<!-- Приклад з картками -->
+						<div class="page__block-test3">
+							<div class="cards">
+								<div class="cards__column">
+									<div class="cards__item item-card">
+										<div class="item-card__image">
+											<img src="img/DSC_0024.JPG" alt="Рим">
+										</div>
+										<div class="item-card__text">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt eaque odio dicta!
+										</div>
+										<a href="" class="item-card__button">Button</a>
+									</div>
+								</div>
+								<div class="cards__column">
+									<div class="cards__item item-card">
+										<div class="item-card__image">
+											<img src="img/IMG_20200225_174805.jpg" alt="Рим">
+										</div>
+										<div class="item-card__text">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt eaque odio dicta!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt eaque odio dicta!
+										</div>
+										<a href="" class="item-card__button">Button</a>
+									</div>
+								</div>
+								<div class="cards__column">
+									<div class="cards__item item-card">
+										<div class="item-card__image">
+											<img src="img/IMG_20200225_175514.jpg" alt="Рим">
+										</div>
+										<div class="item-card__text">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt eaque odio dicta!
+										</div>
+										<a href="" class="item-card__button">Button</a>
+									</div>
+								</div>
+							</div>
+						</div>
+		
+						<!-- =========================================================================================================================================== -->
+		
+						<!-- Приклад з width -->
+						<div class="page__block-test4">
+							<a href="" class="link">Я посилання</a>
+						</div>
+		
+						<!-- =========================================================================================================================================== -->
+		
+						<!-- Приклад з width №2 -->
+						<div class="page__block-test5">
+							<div class="object">
+								<div class="object__icon"></div>
+								<div class="object__title">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus magni inventore, eveniet enim veritatis fugiat corrupti? Minima voluptatum magni, animi corporis, laborum dolore facere nisi nulla repellat illum, consectetur doloremque?
+								</div>
+							</div>
+						</div>
+		
+						<!-- =========================================================================================================================================== -->
+		
+						<!-- Приклад з float -->
+						<div class="page__block-test6">
+							<img class="image" style="width: 100px;" src="img/image2.png" alt="">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi excepturi perferendis consectetur harum reiciendis dignissimos rem odio consequuntur? Voluptates, libero ullam repudiandae magni recusandae aperiam perspiciatis sit architecto quia unde?
+						</div>
+						<!-- ============================================================================================================================================ -->
+						<div class="page__block-test7">
+							<div class="example">
+								<div class="example__item item-example">
+									<div class="item-example__image">
+										<img src="img/image3.png" alt="">
+									</div>
+									<div class="item-example__text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla itaque id unde, facilis provident maxime voluptatem veritatis commodi omnis voluptate fugiat deserunt at, molestiae voluptas nihil culpa qui earum. Iste!
+									</div>
+								</div>
+								<div class="example__item item-example">
+									<div class="item-example__image">
+										<img src="img/image4.png" alt="">
+									</div>
+									<div class="item-example__text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla itaque id unde, facilis provident maxime voluptatem veritatis commodi omnis voluptate fugiat deserunt at, molestiae voluptas nihil culpa qui earum. Iste!
+									</div>
+								</div>
+								<div class="example__item item-example">
+									<div class="item-example__image">
+										<img src="img/image6.png" alt="">
+									</div>
+									<div class="item-example__text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla itaque id unde, facilis provident maxime voluptatem veritatis commodi omnis voluptate fugiat deserunt at, molestiae voluptas nihil culpa qui earum. Iste!
+									</div>
+								</div>
+								<div class="example__item item-example">
+									<div class="item-example__image">
+										<img src="img/image5.png" alt="">
+									</div>
+									<div class="item-example__text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla itaque id unde, facilis provident maxime voluptatem veritatis commodi omnis voluptate fugiat deserunt at, molestiae voluptas nihil culpa qui earum. Iste!
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</main>
+			<footer class="footer">
+					<div class="footer__container">
+						<p class="footer__copyright">&copy; kirillchacha &vert; 2022</p>
+					</div>
+			</footer>
+		</div>
+	</body>
+</html>
